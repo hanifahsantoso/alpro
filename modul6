@@ -1,0 +1,23 @@
+package Modul_6;
+
+import java.util.Scanner;
+
+public class Driver {
+    static int bruteForce(int num, int rank){
+        int result = 1;
+        for(int i = 0; i < rank; i++){
+            result *= num;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+
+        System.out.print("Masukkan Angka: ");
+        int num = x.nextInt();
+        System.out.print("Masukkan Pangkat: ");
+        int rank = x.nextInt();
+        System.out.println("Hasil = "+ bruteForce(num, rank));
+    }
+}
